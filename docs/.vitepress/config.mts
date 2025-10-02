@@ -7,26 +7,33 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' }
+      { text: 'Home', link: '/docs' }
     ],
 
     sidebar: [
         {
             text: 'Concept',
-            items: [{ text: 'File Snapshot Testing', link: '/file-snapshot-testing' }],
+            items: [{ text: 'File Snapshot Testing', link: '/README.md' }],
         },
       {
         text: 'Integrations',
         items: [
-          { text: 'Vitest', link: '/vitest-file-snapshots' },
-          { text: 'Playwright', link: '/playwright-file-snapshots' }
+          { text: 'Vitest', link: '/packages/vitest-file-snapshots/README.md' },
+          { text: 'Playwright', link: '/packages/playwright-file-snapshots/README.md' }
         ]
       }
     ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/cronn/file-snapshots' }
-    ]
+    ],
+
+    // Override the link of the title in the top left corner, see
+    //  https://github.com/vuejs/vitepress/issues/3555#issuecomment-1931462157
+    logoLink: '/doc-test/docs'
   },
-  base: '/doc-test/'
+  base: '/doc-test/',
+  // Set srcDir to link to pages outside the docs folder
+  srcDir: '../',
+
 })

@@ -9,13 +9,13 @@ hero:
   actions:
     - theme: brand
       text: File Snapshot Testing
-      link: /file-snapshot-testing
+      link: ../README.md
     - theme: alt
       text: Vitest Integration
-      link: /vitest-file-snapshots
+      link: ../packages/vitest-file-snapshots/README.md
     - theme: alt
       text: Playwright Integration
-      link: /playwright-file-snapshots
+      link: ../packages/playwright-file-snapshots/README.md
 
 features:
   - title: Feature A
