@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "File Snapshot Testing"
+  text: "Write tests with file snapshots in Playwright and Vitest."
+  tagline: Concept and available Integrations
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: File Snapshot Testing
+      link: /file-snapshot-testing
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Vitest Integration
+      link: /vitest-file-snapshots
+    - theme: alt
+      text: Playwright Integration
+      link: /playwright-file-snapshots
 
 features:
   - title: Feature A
