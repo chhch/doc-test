@@ -1,0 +1,5 @@
+.idea
+doc-test.iml
+
+node_modules
+docs/.vitepress/cache
